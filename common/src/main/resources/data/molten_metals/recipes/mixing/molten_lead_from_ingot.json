@@ -1,0 +1,21 @@
+{
+  "conditions": [
+    {
+      "modid": "oreganized",
+      "type": "forge:mod_loaded"
+    }
+  ],
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "tag": "molten_metals:meltable_lead"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "oreganized:molten_lead",
+      "amount": 8100
+    }
+  ],
+  "heatRequirement": "heated"
+}

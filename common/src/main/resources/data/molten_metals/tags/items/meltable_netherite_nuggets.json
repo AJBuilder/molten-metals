@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "oreganized:netherite_nugget",
+      "required": false
+    },
+    {
+      "id": "caverns_and_chasms:netherite_nugget",
+      "required": false
+    }
+  ]
+}

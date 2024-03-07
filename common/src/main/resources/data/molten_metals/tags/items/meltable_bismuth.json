@@ -4,10 +4,6 @@
     {
       "id": "etcetera:bismuth_ingot",
       "required": false
-    },
-    {
-      "id": "etcetera:raw_bismuth",
-      "required": false
     }
   ]
 }

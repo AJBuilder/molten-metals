@@ -2,8 +2,6 @@
   "replace": false,
   "values": [
     "minecraft:iron_ingot",
-    "minecraft:raw_iron",
-    "create:iron_sheet",
-    "create:crushed_raw_iron"
+    "create:iron_sheet"
   ]
 }

@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "create:crushed_raw_silver",
+    {
+      "id": "oreganized:raw_silver",
+      "required": false
+    },
+    {
+      "id": "galosphere:raw_silver",
+      "required": false
+    },
+    {
+      "id": "caverns_and_chasms:raw_silver",
+      "required": false
+    }
+  ]
+}

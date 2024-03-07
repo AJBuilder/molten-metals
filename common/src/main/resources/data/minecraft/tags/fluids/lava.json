@@ -12,6 +12,12 @@
     "molten_metals:molten_zinc",
     "molten_metals:flowing_molten_zinc",
     "molten_metals:molten_brass",
-    "molten_metals:flowing_molten_brass"
+    "molten_metals:flowing_molten_brass",
+    "molten_metals:molten_bismuth",
+    "molten_metals:flowing_molten_bismuth",
+    "molten_metals:molten_mercury",
+    "molten_metals:flowing_molten_mercury",
+    "molten_metals:molten_silver",
+    "molten_metals:flowing_molten_silver"
   ]
 }

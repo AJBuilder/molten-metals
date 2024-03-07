@@ -2,10 +2,12 @@
   "replace": false,
   "values": [
     "create:zinc_ingot",
-    "create:raw_zinc",
-    "create:crushed_raw_zinc",
     {
       "id": "createaddition:zinc_sheet",
+      "required": false
+    },
+    {
+      "id": "createdeco:zinc_sheet",
       "required": false
     }
   ]

@@ -1,6 +1,6 @@
 {
-  "parent": "minecraft:item/generated",
+  "parent": "molten_metals:item/mold",
   "textures": {
-    "layer0": "molten_metals:item/molten_netherite_ingot_mold"
+    "mold": "molten_metals:item/molten_netherite_ingot_mold"
   }
 }

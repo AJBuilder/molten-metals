@@ -46,8 +46,12 @@ public class ModBlocks {
 
     public static final Supplier<LiquidBlock> MOLTEN_BISMUTH = regBlock("molten_bismuth", () ->
             MoltenMetalsPlatform.doMoltenMetal(ModFluids.MOLTEN_BISMUTH, BlockBehaviour.Properties.copy(Blocks.LAVA).noCollission().strength(100f).noLootTable().lightLevel((blockStatex) -> 8)));
+    public static final Supplier<LiquidBlock> MOLTEN_SILVER = regBlock("molten_silver", () ->
+        MoltenMetalsPlatform.doMoltenMetal(ModFluids.MOLTEN_SILVER, BlockBehaviour.Properties.copy(Blocks.LAVA).noCollission().strength(100f).noLootTable().lightLevel((blockStatex) -> 8)));
     public static final Supplier<LiquidBlock> MOLTEN_MERCURY = regBlock("molten_mercury", () ->
             MoltenMetalsPlatform.doMoltenMetal(ModFluids.MOLTEN_MERCURY, BlockBehaviour.Properties.copy(Blocks.LAVA).noCollission().strength(100f).noLootTable().lightLevel((blockStatex) -> 8)));
 
+    public static final Supplier<Block> SLAG_BLOCK = regWithItem("slag_block", () ->
+            new Block(BlockBehaviour.Properties.copy(Blocks.RAW_IRON_BLOCK)));
 
 }

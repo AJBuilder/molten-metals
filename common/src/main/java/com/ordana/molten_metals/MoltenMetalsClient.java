@@ -30,6 +30,8 @@ public class MoltenMetalsClient {
         ClientHelper.registerFluidRenderType(ModFluids.FLOWING_MOLTEN_BISMUTH.get(), RenderType.translucent());
         ClientHelper.registerFluidRenderType(ModFluids.MOLTEN_MERCURY.get(), RenderType.translucent());
         ClientHelper.registerFluidRenderType(ModFluids.FLOWING_MOLTEN_MERCURY.get(), RenderType.translucent());
+        ClientHelper.registerFluidRenderType(ModFluids.MOLTEN_SILVER.get(), RenderType.translucent());
+        ClientHelper.registerFluidRenderType(ModFluids.FLOWING_MOLTEN_SILVER.get(), RenderType.translucent());
         finishedSetup = true;
     }
 

@@ -32,7 +32,7 @@ public class ModCreativeTabs {
     }
 
     public static void registerItemsToTabs(RegHelper.ItemToTabEvent e) {
-        after(e, Items.WATER_BUCKET, CreativeModeTabs.TOOLS_AND_UTILITIES, "buckets",
+        after(e, Items.WATER_BUCKET, CreativeModeTabs.TOOLS_AND_UTILITIES,
                 ModItems.MOLTEN_IRON_BUCKET, ModItems.MOLTEN_COPPER_BUCKET, ModItems.MOLTEN_GOLD_BUCKET,
                 ModItems.MOLTEN_NETHERITE_BUCKET, ModItems.MOLTEN_ZINC_BUCKET, ModItems.MOLTEN_BRASS_BUCKET,
                 ModItems.UNFIRED_CERAMIC_INGOT_MOLD, ModItems.CERAMIC_INGOT_MOLD, ModItems.INGOT_MOLD,
@@ -42,34 +42,49 @@ public class ModCreativeTabs {
                 ModItems.MOLTEN_NETHERITE_INGOT_MOLD, ModItems.MOLTEN_ZINC_INGOT_MOLD, ModItems.MOLTEN_BRASS_INGOT_MOLD
         );
 
-        afterML(e, Items.WATER_BUCKET, CreativeModeTabs.TOOLS_AND_UTILITIES, "buckets", "etcetera",
+        afterML(e, Items.WATER_BUCKET, CreativeModeTabs.TOOLS_AND_UTILITIES, "etcetera",
                 ModItems.MOLTEN_BISMUTH_BUCKET, ModItems.MOLTEN_BISMUTH_CERAMIC_INGOT_MOLD, ModItems.MOLTEN_BISMUTH_INGOT_MOLD
         );
+        
+        afterML(e, Items.WATER_BUCKET, CreativeModeTabs.TOOLS_AND_UTILITIES, "oreganized",
+            ModItems.MOLTEN_LEAD_CERAMIC_INGOT_MOLD, ModItems.MOLTEN_LEAD_INGOT_MOLD
+        );
+        
+        afterML(e, Items.WATER_BUCKET, CreativeModeTabs.TOOLS_AND_UTILITIES, "oreganized",
+            ModItems.MOLTEN_SILVER_BUCKET, ModItems.MOLTEN_SILVER_CERAMIC_INGOT_MOLD, ModItems.MOLTEN_SILVER_INGOT_MOLD
+        );
+        afterML(e, Items.WATER_BUCKET, CreativeModeTabs.TOOLS_AND_UTILITIES, "galosphere",
+            ModItems.MOLTEN_SILVER_BUCKET, ModItems.MOLTEN_SILVER_CERAMIC_INGOT_MOLD, ModItems.MOLTEN_SILVER_INGOT_MOLD
+        );
+        afterML(e, Items.WATER_BUCKET, CreativeModeTabs.TOOLS_AND_UTILITIES, "caverns_and_chasms",
+            ModItems.MOLTEN_SILVER_BUCKET, ModItems.MOLTEN_SILVER_CERAMIC_INGOT_MOLD, ModItems.MOLTEN_SILVER_INGOT_MOLD
+        );
 
-        afterML(e, Items.WATER_BUCKET, CreativeModeTabs.TOOLS_AND_UTILITIES, "buckets", "spelunkery",
+        afterML(e, Items.WATER_BUCKET, CreativeModeTabs.TOOLS_AND_UTILITIES, "spelunkery",
                 ModItems.MOLTEN_MERCURY_BUCKET
         );
-    }
 
-    private static void after(RegHelper.ItemToTabEvent event, TagKey<Item> target,
-                              ResourceKey<CreativeModeTab> tab, String key, Supplier<?>... items) {
-        after(event, i -> i.is(target), tab, key, items);
+        after(e, Items.RAW_GOLD_BLOCK, CreativeModeTabs.NATURAL_BLOCKS,
+                  ModBlocks.SLAG_BLOCK
+        );
+
+        after(e, Items.RAW_GOLD, CreativeModeTabs.INGREDIENTS,
+            ModItems.SLAG, ModItems.SLAG_NUGGET
+        );
     }
 
     private static void after(RegHelper.ItemToTabEvent event, Item target,
-                              ResourceKey<CreativeModeTab> tab, String key, Supplier<?>... items) {
-        after(event, i -> i.is(target), tab, key, items);
+                              ResourceKey<CreativeModeTab> tab, Supplier<?>... items) {
+        after(event, i -> i.is(target), tab, items);
     }
 
     private static void after(RegHelper.ItemToTabEvent event, Predicate<ItemStack> targetPred,
-                              ResourceKey<CreativeModeTab> tab, String key, Supplier<?>... items) {
-        //if (CommonConfigs.isEnabled(key)) {
+                              ResourceKey<CreativeModeTab> tab, Supplier<?>... items) {
         ItemLike[] entries = Arrays.stream(items).map((s -> (ItemLike) (s.get()))).toArray(ItemLike[]::new);
         if(CommonConfigs.CREATIVE_TAB.get()){
             tab = MOD_TAB.getHolder().unwrapKey().get();
         }
         event.addAfter(tab, targetPred, entries);
-        //}
     }
 
     private static void before(RegHelper.ItemToTabEvent event, Item target,
@@ -79,40 +94,18 @@ public class ModCreativeTabs {
 
     private static void before(RegHelper.ItemToTabEvent event, Predicate<ItemStack> targetPred,
                                ResourceKey<CreativeModeTab> tab, String key, Supplier<?>... items) {
-        //if (CommonConfigs.isEnabled(key)) {
         ItemLike[] entries = Arrays.stream(items).map(s -> (ItemLike) s.get()).toArray(ItemLike[]::new);
         if(CommonConfigs.CREATIVE_TAB.get()){
             tab = MOD_TAB.getHolder().unwrapKey().get();
         }
         event.addBefore(tab, targetPred, entries);
-        //}
-    }
-
-    private static void add(RegHelper.ItemToTabEvent event,
-                            ResourceKey<CreativeModeTab> tab, String key, Supplier<?>... items) {
-        //if (CommonConfigs.isEnabled(key)) {
-        ItemLike[] entries = Arrays.stream(items).map((s -> (ItemLike) (s.get()))).toArray(ItemLike[]::new);
-        if(CommonConfigs.CREATIVE_TAB.get()){
-            tab = MOD_TAB.getHolder().unwrapKey().get();
-        }
-        event.add(tab, entries);
-        //}
     }
 
     private static void afterML(RegHelper.ItemToTabEvent event, Item target,
-                                ResourceKey<CreativeModeTab> tab, String key, String modLoaded,
+                                ResourceKey<CreativeModeTab> tab, String modLoaded,
                                 Supplier<?>... items) {
         if (PlatHelper.isModLoaded(modLoaded)) {
-            after(event, target, tab, key, items);
-        }
-    }
-
-    private static void afterTL(RegHelper.ItemToTabEvent event, Item target,
-                                ResourceKey<CreativeModeTab> tab, String key,
-                                List<String> tags,
-                                Supplier<?>... items) {
-        if (isTagOn(tags.toArray(String[]::new))) {
-            after(event, target, tab, key, items);
+            after(event, target, tab, items);
         }
     }
 
@@ -123,23 +116,6 @@ public class ModCreativeTabs {
         if (PlatHelper.isModLoaded(modLoaded)) {
             before(event, target, tab, key, items);
         }
-    }
-
-    private static void beforeTL(RegHelper.ItemToTabEvent event, Item target,
-                                 ResourceKey<CreativeModeTab> tab, String key,
-                                 List<String> tags,
-                                 Supplier<?>... items) {
-        if (isTagOn(tags.toArray(String[]::new))) {
-            after(event, target, tab, key, items);
-        }
-    }
-
-    private static boolean isTagOn(String... tags) {
-        for (var t : tags)
-            if (BuiltInRegistries.ITEM.getTag(TagKey.create(Registries.ITEM, new ResourceLocation(t))).isPresent()) {
-                return true;
-            }
-        return false;
     }
 
 }

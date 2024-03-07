@@ -52,8 +52,22 @@
   "fluid.molten_metals.molten_bismuth": "Molten Bismuth",
   "fluid_type.molten_metals.molten_bismuth": "Molten Bismuth",
 
+  "item.molten_metals.molten_silver_bucket": "Bucket of Molten Silver",
+  "item.molten_metals.molten_silver_ceramic_ingot_mold": "Ceramic Ingot Mold of Molten Silver",
+  "item.molten_metals.molten_silver_ingot_mold": "Ingot Mold of Molten Silver",
+  "block.molten_metals.molten_silver": "Molten Silver",
+  "fluid.molten_metals.molten_silver": "Molten Silver",
+  "fluid_type.molten_metals.molten_silver": "Molten Silver",
+
+  "item.molten_metals.molten_lead_ceramic_ingot_mold": "Ceramic Ingot Mold of Molten Bismuth",
+  "item.molten_metals.molten_lead_ingot_mold": "Ingot Mold of Molten Bismuth",
+
   "item.molten_metals.molten_mercury_bucket": "Bucket of Molten Mercury",
   "block.molten_metals.molten_mercury": "Molten Mercury",
   "fluid.molten_metals.molten_mercury": "Molten Mercury",
-  "fluid_type.molten_metals.molten_mercury": "Molten Mercury"
+  "fluid_type.molten_metals.molten_mercury": "Molten Mercury",
+
+  "item.molten_metals.slag": "Slag",
+  "block.molten_metals.slag_block": "Block of Slag",
+  "item.molten_metals.slag_nugget": "Slag Nugget"
 }
