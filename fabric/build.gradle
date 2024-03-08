@@ -23,14 +23,7 @@ dependencies {
     modImplementation "net.fabricmc:fabric-loader:${rootProject.fabric_loader_version}"
     modApi "net.fabricmc.fabric-api:fabric-api:${rootProject.fabric_api_version}"
 
-    modImplementation("curse.maven:selene-499980:4806892")
-
-    //modImplementation("curse.maven:create-fabric-624165:4721061")
-
-    //modImplementation("curse.maven:modmenu-308702:3920481") {
-    //    exclude module: "fabric-api"
-    //}
-    include(implementation(annotationProcessor("io.github.llamalad7:mixinextras-fabric:${rootProject.mixin_extras_version}")))
+    modImplementation("curse.maven:selene-499980:5164055")
 
     common(project(path: ":common", configuration: "namedElements")) { transitive false }
     shadowCommon(project(path: ":common", configuration: "transformProductionFabric")) { transitive false }
