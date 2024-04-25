@@ -26,8 +26,8 @@ public class MoltenSilverFluid extends MoltenMetalFluid {
                 MoltenMetals.res("block/molten_silver"),
                 MoltenMetals.res("block/molten_silver_flowing"),
                 -1,
-                MoltenMetals.res("block/molten_silver_overlay"),
-                MoltenMetals.res("block/molten_silver_overlay"),
+                MoltenMetals.res("block/molten_silver_flowing"),
+                MoltenMetals.res("block/molten_silver_flowing"),
                 new Vec3(133, 0, 0));
 
     }

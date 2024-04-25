@@ -26,8 +26,8 @@ public class MoltenZincFluid extends MoltenMetalFluid {
                 MoltenMetals.res("block/molten_zinc"),
                 MoltenMetals.res("block/molten_zinc_flowing"),
                 -1,
-                MoltenMetals.res("block/molten_zinc_overlay"),
-                MoltenMetals.res("block/molten_zinc_overlay"),
+                MoltenMetals.res("block/molten_zinc_flowing"),
+                MoltenMetals.res("block/molten_zinc_flowing"),
                 new Vec3(133, 0, 0));
 
     }

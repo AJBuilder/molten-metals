@@ -26,8 +26,8 @@ public class MoltenCopperFluid extends MoltenMetalFluid {
                 MoltenMetals.res("block/molten_copper"),
                 MoltenMetals.res("block/molten_copper_flowing"),
                 -1,
-                MoltenMetals.res("block/molten_copper_overlay"),
-                MoltenMetals.res("block/molten_copper_overlay"),
+                MoltenMetals.res("block/molten_copper_flowing"),
+                MoltenMetals.res("block/molten_copper_flowing"),
                 new Vec3(133, 0, 0));
 
     }

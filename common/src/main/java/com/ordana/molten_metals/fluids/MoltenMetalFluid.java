@@ -47,8 +47,8 @@ public class MoltenMetalFluid extends ModFlowingFluid {
                 MoltenMetals.res("block/texture"),
                 MoltenMetals.res("block/texture_flowing"),
                 -1,
-                MoltenMetals.res("block/texture_overlay"),
-                MoltenMetals.res("block/texture_overlay"),
+                MoltenMetals.res("block/texture_flowing"),
+                MoltenMetals.res("block/texture_flowing"),
                 new Vec3(133, 0, 0));
 
     }
@@ -58,8 +58,8 @@ public class MoltenMetalFluid extends ModFlowingFluid {
                 MoltenMetals.res("block/" + string),
                 MoltenMetals.res("block/" + string + "_flowing"),
                 -1,
-                MoltenMetals.res("block/" + string + "_overlay"),
-                MoltenMetals.res("block/" + string + "_overlay"),
+                MoltenMetals.res("block/" + string + "_flowing"),
+                MoltenMetals.res("block/" + string + "_flowing"),
                 new Vec3(133, 0, 0));
 
     }
@@ -194,7 +194,7 @@ public class MoltenMetalFluid extends ModFlowingFluid {
     }
 
     private boolean isFlammable(LevelReader level, BlockPos pos) {
-        return pos.getY() >= level.getMinBuildHeight() && pos.getY() < level.getMaxBuildHeight() && !level.hasChunkAt(pos) ? false : level.getBlockState(pos).ignitedByLava();
+        return (pos.getY() < level.getMinBuildHeight() || pos.getY() >= level.getMaxBuildHeight() || level.hasChunkAt(pos)) && level.getBlockState(pos).ignitedByLava();
     }
 
     public static class Flowing extends MoltenMetalFluid {

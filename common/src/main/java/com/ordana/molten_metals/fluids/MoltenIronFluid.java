@@ -26,8 +26,8 @@ public class MoltenIronFluid extends MoltenMetalFluid {
                 MoltenMetals.res("block/molten_iron"),
                 MoltenMetals.res("block/molten_iron_flowing"),
                 -1,
-                MoltenMetals.res("block/molten_iron_overlay"),
-                MoltenMetals.res("block/molten_iron_overlay"),
+                MoltenMetals.res("block/molten_iron_flowing"),
+                MoltenMetals.res("block/molten_iron_flowing"),
                 new Vec3(133, 0, 0));
 
     }

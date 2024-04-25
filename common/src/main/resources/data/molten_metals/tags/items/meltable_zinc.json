@@ -9,6 +9,10 @@
     {
       "id": "createdeco:zinc_sheet",
       "required": false
+    },
+    {
+      "id": "create_dd:zinc_sheet",
+      "required": false
     }
   ]
 }

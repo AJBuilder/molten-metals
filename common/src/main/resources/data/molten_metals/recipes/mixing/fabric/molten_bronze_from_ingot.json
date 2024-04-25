@@ -1,0 +1,25 @@
+{
+  "conditions": [
+    {
+      "modid": "create_dd",
+      "type": "forge:mod_loaded"
+    },
+    {
+      "modid": "fabric-api",
+      "type": "forge:mod_loaded"
+    }
+  ],
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "create_dd:bronze_ingot"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "molten_metals:molten_bronze",
+      "amount": 8100
+    }
+  ],
+  "heatRequirement": "heated"
+}

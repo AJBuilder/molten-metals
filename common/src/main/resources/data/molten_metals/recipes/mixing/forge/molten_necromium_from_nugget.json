@@ -1,0 +1,28 @@
+{
+  "conditions": [
+    {
+      "modid": "caverns_and_chasms",
+      "type": "forge:mod_loaded"
+    },
+    {
+      "type": "forge:not",
+      "value": {
+        "modid": "fabric-api",
+        "type": "forge:mod_loaded"
+      }
+    }
+  ],
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "caverns_and_chasms:necromium_nugget"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "molten_metals:molten_necromium",
+      "amount": 11.11
+    }
+  ],
+  "heatRequirement": "heated"
+}

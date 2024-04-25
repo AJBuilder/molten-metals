@@ -1,0 +1,28 @@
+{
+  "conditions": [
+    {
+      "modid": "create_dd",
+      "type": "forge:mod_loaded"
+    },
+    {
+      "type": "forge:not",
+      "value": {
+        "modid": "fabric-api",
+        "type": "forge:mod_loaded"
+      }
+    }
+  ],
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "create_dd:necromium_ingot"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "molten_metals:molten_necromium",
+      "amount": 100
+    }
+  ],
+  "heatRequirement": "heated"
+}

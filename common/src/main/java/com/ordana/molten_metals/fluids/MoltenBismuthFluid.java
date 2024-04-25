@@ -26,8 +26,8 @@ public class MoltenBismuthFluid extends MoltenMetalFluid {
                 MoltenMetals.res("block/molten_bismuth"),
                 MoltenMetals.res("block/molten_bismuth_flowing"),
                 -1,
-                MoltenMetals.res("block/molten_bismuth_overlay"),
-                MoltenMetals.res("block/molten_bismuth_overlay"),
+                MoltenMetals.res("block/molten_bismuth_flowing"),
+                MoltenMetals.res("block/molten_bismuth_flowing"),
                 new Vec3(133, 0, 0));
 
     }

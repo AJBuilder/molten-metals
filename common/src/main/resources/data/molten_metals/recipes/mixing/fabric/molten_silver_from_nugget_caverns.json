@@ -1,0 +1,25 @@
+{
+  "conditions": [
+    {
+      "modid": "caverns_and_chasms",
+      "type": "forge:mod_loaded"
+    },
+    {
+      "modid": "fabric-api",
+      "type": "forge:mod_loaded"
+    }
+  ],
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "tag": "molten_metals:meltable_silver_nuggets"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "molten_metals:molten_silver",
+      "amount": 900
+    }
+  ],
+  "heatRequirement": "heated"
+}

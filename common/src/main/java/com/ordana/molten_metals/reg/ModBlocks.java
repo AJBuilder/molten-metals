@@ -50,6 +50,14 @@ public class ModBlocks {
         MoltenMetalsPlatform.doMoltenMetal(ModFluids.MOLTEN_SILVER, BlockBehaviour.Properties.copy(Blocks.LAVA).noCollission().strength(100f).noLootTable().lightLevel((blockStatex) -> 8)));
     public static final Supplier<LiquidBlock> MOLTEN_MERCURY = regBlock("molten_mercury", () ->
             MoltenMetalsPlatform.doMoltenMetal(ModFluids.MOLTEN_MERCURY, BlockBehaviour.Properties.copy(Blocks.LAVA).noCollission().strength(100f).noLootTable().lightLevel((blockStatex) -> 8)));
+    public static final Supplier<LiquidBlock> MOLTEN_NECROMIUM = regBlock("molten_necromium", () ->
+        MoltenMetalsPlatform.doMoltenMetal(ModFluids.MOLTEN_NECROMIUM, BlockBehaviour.Properties.copy(Blocks.LAVA).noCollission().strength(100f).noLootTable().lightLevel((blockStatex) -> 8)));
+    public static final Supplier<LiquidBlock> MOLTEN_ELECTRUM = regBlock("molten_electrum", () ->
+        MoltenMetalsPlatform.doMoltenMetal(ModFluids.MOLTEN_ELECTRUM, BlockBehaviour.Properties.copy(Blocks.LAVA).noCollission().strength(100f).noLootTable().lightLevel((blockStatex) -> 8)));
+    public static final Supplier<LiquidBlock> MOLTEN_TIN = regBlock("molten_tin", () ->
+        MoltenMetalsPlatform.doMoltenMetal(ModFluids.MOLTEN_TIN, BlockBehaviour.Properties.copy(Blocks.LAVA).noCollission().strength(100f).noLootTable().lightLevel((blockStatex) -> 8)));
+    public static final Supplier<LiquidBlock> MOLTEN_BRONZE = regBlock("molten_bronze", () ->
+        MoltenMetalsPlatform.doMoltenMetal(ModFluids.MOLTEN_BRONZE, BlockBehaviour.Properties.copy(Blocks.LAVA).noCollission().strength(100f).noLootTable().lightLevel((blockStatex) -> 8)));
 
     public static final Supplier<Block> SLAG_BLOCK = regWithItem("slag_block", () ->
             new Block(BlockBehaviour.Properties.copy(Blocks.RAW_IRON_BLOCK)));

@@ -26,8 +26,8 @@ public class MoltenMercuryFluid extends MoltenMetalFluid {
                 MoltenMetals.res("block/molten_mercury"),
                 MoltenMetals.res("block/molten_mercury_flowing"),
                 -1,
-                MoltenMetals.res("block/molten_mercury_overlay"),
-                MoltenMetals.res("block/molten_mercury_overlay"),
+                MoltenMetals.res("block/molten_mercury_flowing"),
+                MoltenMetals.res("block/molten_mercury_flowing"),
                 new Vec3(133, 0, 0));
 
     }

@@ -18,6 +18,14 @@
     "molten_metals:molten_mercury",
     "molten_metals:flowing_molten_mercury",
     "molten_metals:molten_silver",
-    "molten_metals:flowing_molten_silver"
+    "molten_metals:flowing_molten_silver",
+    "molten_metals:molten_electrum",
+    "molten_metals:flowing_molten_electrum",
+    "molten_metals:molten_necromium",
+    "molten_metals:flowing_molten_necromium",
+    "molten_metals:molten_tin",
+    "molten_metals:flowing_molten_tin",
+    "molten_metals:molten_bronze",
+    "molten_metals:flowing_molten_bronze"
   ]
 }

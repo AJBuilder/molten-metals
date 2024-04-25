@@ -26,8 +26,8 @@ public class MoltenBrassFluid extends MoltenMetalFluid {
                 MoltenMetals.res("block/molten_brass"),
                 MoltenMetals.res("block/molten_brass_flowing"),
                 -1,
-                MoltenMetals.res("block/molten_brass_overlay"),
-                MoltenMetals.res("block/molten_brass_overlay"),
+                MoltenMetals.res("block/molten_brass_flowing"),
+                MoltenMetals.res("block/molten_brass_flowing"),
                 new Vec3(133, 0, 0));
 
     }

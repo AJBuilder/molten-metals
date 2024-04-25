@@ -1,0 +1,24 @@
+{
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "modid": "fabric-api",
+        "type": "forge:mod_loaded"
+      }
+    }
+  ],
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "tag": "molten_metals:meltable_zinc_nuggets"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "molten_metals:molten_zinc",
+      "amount": 11.11
+    }
+  ],
+  "heatRequirement": "heated"
+}

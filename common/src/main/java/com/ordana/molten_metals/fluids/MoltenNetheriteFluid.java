@@ -26,8 +26,8 @@ public class MoltenNetheriteFluid extends MoltenMetalFluid {
                 MoltenMetals.res("block/molten_netherite"),
                 MoltenMetals.res("block/molten_netherite_flowing"),
                 -1,
-                MoltenMetals.res("block/molten_netherite_overlay"),
-                MoltenMetals.res("block/molten_netherite_overlay"),
+                MoltenMetals.res("block/molten_netherite_flowing"),
+                MoltenMetals.res("block/molten_netherite_flowing"),
                 new Vec3(133, 0, 0));
 
     }

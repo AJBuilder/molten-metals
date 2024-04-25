@@ -1,0 +1,27 @@
+{
+  "conditions": [
+    {
+      "modid": "galosphere",
+      "type": "forge:mod_loaded"
+    },
+    {
+      "modid": "fabric-api",
+      "type": "forge:mod_loaded"
+    }
+  ],
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "molten_metals:ingot_mold"
+    },
+    {
+      "fluid": "molten_metals:molten_silver",
+      "amount": 8100
+    }
+  ],
+  "results": [
+    {
+      "item": "molten_metals:molten_silver_ingot_mold"
+    }
+  ]
+}

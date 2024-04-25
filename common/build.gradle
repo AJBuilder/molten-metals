@@ -11,20 +11,23 @@ dependencies {
     modImplementation("curse.maven:selene-499980:5164055")
 }
 
+processResources {
+    exclude("resourcepacks/")
+}
+
+sourceSets.main {
+    resources {
+        srcDir("src/generated/resources")
+        exclude("src/generated/resources/.cache")
+    }
+}
+
 publishing {
     publications {
         mavenCommon(MavenPublication) {
-            artifactId = rootProject.mod_id
-            from components.java
         }
     }
-
     repositories {
-        // Add repositories to publish to here.
-        maven {
-            name = "TerraformersMC"
-            url = "https://maven.terraformersmc.com/releases"
-        }
     }
 }
 

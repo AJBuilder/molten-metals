@@ -1,0 +1,28 @@
+{
+  "conditions": [
+    {
+      "modid": "spelunkery",
+      "type": "forge:mod_loaded"
+    },
+    {
+      "type": "forge:not",
+      "value": {
+        "modid": "fabric-api",
+        "type": "forge:mod_loaded"
+      }
+    }
+  ],
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "tag": "molten_metals:meltable_mercury_nuggets"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "molten_metals:molten_mercury",
+      "amount": 11.11
+    }
+  ],
+  "heatRequirement": "heated"
+}

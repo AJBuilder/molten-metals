@@ -26,8 +26,8 @@ public class MoltenGoldFluid extends MoltenMetalFluid {
                 MoltenMetals.res("block/molten_gold"),
                 MoltenMetals.res("block/molten_gold_flowing"),
                 -1,
-                MoltenMetals.res("block/molten_gold_overlay"),
-                MoltenMetals.res("block/molten_gold_overlay"),
+                MoltenMetals.res("block/molten_gold_flowing"),
+                MoltenMetals.res("block/molten_gold_flowing"),
                 new Vec3(133, 0, 0));
 
     }

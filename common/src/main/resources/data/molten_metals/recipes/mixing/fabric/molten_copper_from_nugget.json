@@ -1,0 +1,21 @@
+{
+  "conditions": [
+    {
+      "modid": "fabric-api",
+      "type": "forge:mod_loaded"
+    }
+  ],
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "tag": "molten_metals:meltable_copper_nuggets"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "molten_metals:molten_copper",
+      "amount": 900
+    }
+  ],
+  "heatRequirement": "heated"
+}
