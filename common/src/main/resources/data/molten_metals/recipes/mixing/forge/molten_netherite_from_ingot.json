@@ -11,7 +11,7 @@
   "type": "create:mixing",
   "ingredients": [
     {
-      "item": "minecraft:netherite_ingot"
+      "tag": "molten_metals:meltable_netherite_ingots"
     }
   ],
   "results": [

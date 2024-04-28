@@ -12,17 +12,19 @@
       }
     }
   ],
-  "type": "create:mixing",
+  "type": "create:emptying",
   "ingredients": [
     {
-      "item": "create_dd:bronze_nugget"
+      "item": "molten_metals:molten_steel_ceramic_ingot_mold"
     }
   ],
   "results": [
     {
-      "fluid": "molten_metals:molten_bronze",
-      "amount": 11.11
+      "item": "molten_metals:ceramic_ingot_mold"
+    },
+    {
+      "fluid": "molten_metals:molten_steel",
+      "amount": 100
     }
-  ],
-  "heatRequirement": "heated"
+  ]
 }

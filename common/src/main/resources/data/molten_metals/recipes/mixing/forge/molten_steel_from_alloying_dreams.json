@@ -15,14 +15,18 @@
   "type": "create:mixing",
   "ingredients": [
     {
-      "item": "create_dd:bronze_nugget"
+      "tag": "minecraft:coals",
+      "count": 3
+    },
+    {
+      "fluid": "molten_metals:molten_iron",
+      "amount": 100
     }
   ],
   "results": [
     {
-      "fluid": "molten_metals:molten_bronze",
-      "amount": 11.11
+      "fluid": "molten_metals:molten_steel",
+      "amount": 100
     }
-  ],
-  "heatRequirement": "heated"
+  ]
 }

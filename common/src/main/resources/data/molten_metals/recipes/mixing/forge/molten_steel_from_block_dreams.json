@@ -15,13 +15,13 @@
   "type": "create:mixing",
   "ingredients": [
     {
-      "item": "create_dd:bronze_nugget"
+      "item": "create_dd:steel_block"
     }
   ],
   "results": [
     {
-      "fluid": "molten_metals:molten_bronze",
-      "amount": 11.11
+      "fluid": "molten_metals:molten_steel",
+      "amount": 900
     }
   ],
   "heatRequirement": "heated"

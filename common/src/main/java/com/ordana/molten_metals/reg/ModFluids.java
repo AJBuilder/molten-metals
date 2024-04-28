@@ -78,4 +78,9 @@ public class ModFluids extends Fluids {
     public static final Supplier<FlowingFluid> MOLTEN_BRONZE = RegHelper.registerFluid(MoltenMetals.res("molten_bronze"), () ->
         new MoltenBronzeFluid.Source(ModFlowingFluid.properties().supportsBoating(true).lightLevel(8), ModBlocks.MOLTEN_BRONZE));
 
+    public static final Supplier<FlowingFluid> FLOWING_MOLTEN_STEEL = RegHelper.registerFluid(MoltenMetals.res("flowing_molten_steel"), () ->
+        new MoltenSteelFluid.Flowing(ModFlowingFluid.properties().supportsBoating(true).lightLevel(8), ModBlocks.MOLTEN_STEEL));
+    public static final Supplier<FlowingFluid> MOLTEN_STEEL = RegHelper.registerFluid(MoltenMetals.res("molten_steel"), () ->
+        new MoltenSteelFluid.Source(ModFlowingFluid.properties().supportsBoating(true).lightLevel(8), ModBlocks.MOLTEN_STEEL));
+
 }

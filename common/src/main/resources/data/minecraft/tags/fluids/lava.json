@@ -15,8 +15,6 @@
     "molten_metals:flowing_molten_brass",
     "molten_metals:molten_bismuth",
     "molten_metals:flowing_molten_bismuth",
-    "molten_metals:molten_mercury",
-    "molten_metals:flowing_molten_mercury",
     "molten_metals:molten_silver",
     "molten_metals:flowing_molten_silver",
     "molten_metals:molten_electrum",
@@ -26,6 +24,8 @@
     "molten_metals:molten_tin",
     "molten_metals:flowing_molten_tin",
     "molten_metals:molten_bronze",
-    "molten_metals:flowing_molten_bronze"
+    "molten_metals:flowing_molten_bronze",
+    "molten_metals:molten_steel",
+    "molten_metals:flowing_molten_steel"
   ]
 }

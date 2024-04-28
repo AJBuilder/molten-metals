@@ -15,12 +15,12 @@
   "type": "create:mixing",
   "ingredients": [
     {
-      "item": "create_dd:necromium_ingot"
+      "item": "create_dd:bronze_ingot"
     }
   ],
   "results": [
     {
-      "fluid": "molten_metals:molten_necromium",
+      "fluid": "molten_metals:molten_bronze",
       "amount": 100
     }
   ],

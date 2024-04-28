@@ -94,6 +94,13 @@
   "fluid.molten_metals.molten_tin": "Molten Tin",
   "fluid_type.molten_metals.molten_tin": "Molten Tin",
 
+  "item.molten_metals.molten_steel_bucket": "Bucket of Molten Steel",
+  "item.molten_metals.molten_steel_ceramic_ingot_mold": "Ceramic Ingot Mold of Molten Steel",
+  "item.molten_metals.molten_steel_ingot_mold": "Ingot Mold of Molten Steel",
+  "block.molten_metals.molten_steel": "Molten Steel",
+  "fluid.molten_metals.molten_steel": "Molten Steel",
+  "fluid_type.molten_metals.molten_steel": "Molten Steel",
+
   "item.molten_metals.molten_lead_ceramic_ingot_mold": "Ceramic Ingot Mold of Molten Lead",
   "item.molten_metals.molten_lead_ingot_mold": "Ingot Mold of Molten Lead",
 

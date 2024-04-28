@@ -103,13 +103,13 @@ public class ModCreativeTabs {
 
         //DREAMS & DESIRES
         afterML(e, ModItems.MOLTEN_BRASS_BUCKET.get(), CreativeModeTabs.TOOLS_AND_UTILITIES, "create_dd",
-            ModItems.MOLTEN_TIN_BUCKET, ModItems.MOLTEN_BRONZE_BUCKET
+            ModItems.MOLTEN_TIN_BUCKET, ModItems.MOLTEN_BRONZE_BUCKET, ModItems.MOLTEN_STEEL_BUCKET
         );
         afterML(e, ModItems.MOLTEN_BRASS_CERAMIC_INGOT_MOLD.get(), CreativeModeTabs.TOOLS_AND_UTILITIES, "create_dd",
-            ModItems.MOLTEN_TIN_CERAMIC_INGOT_MOLD, ModItems.MOLTEN_BRONZE_CERAMIC_INGOT_MOLD
+            ModItems.MOLTEN_TIN_CERAMIC_INGOT_MOLD, ModItems.MOLTEN_BRONZE_CERAMIC_INGOT_MOLD, ModItems.MOLTEN_STEEL_CERAMIC_INGOT_MOLD
         );
         afterML(e, ModItems.MOLTEN_BRASS_INGOT_MOLD.get(), CreativeModeTabs.TOOLS_AND_UTILITIES, "create_dd",
-            ModItems.MOLTEN_TIN_INGOT_MOLD, ModItems.MOLTEN_BRONZE_INGOT_MOLD
+            ModItems.MOLTEN_TIN_INGOT_MOLD, ModItems.MOLTEN_BRONZE_INGOT_MOLD, ModItems.MOLTEN_STEEL_INGOT_MOLD
         );
 
         //SPELUNKERY

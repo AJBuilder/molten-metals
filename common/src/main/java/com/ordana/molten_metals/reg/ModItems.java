@@ -44,6 +44,8 @@ public class ModItems {
         new MoltenMetalBucketItem(ModFluids.MOLTEN_TIN.get(), (new Item.Properties().stacksTo(1))));
     public static final Supplier<Item> MOLTEN_BRONZE_BUCKET = regItem("molten_bronze_bucket", () ->
         new MoltenMetalBucketItem(ModFluids.MOLTEN_BRONZE.get(), (new Item.Properties().stacksTo(1))));
+    public static final Supplier<Item> MOLTEN_STEEL_BUCKET = regItem("molten_steel_bucket", () ->
+        new MoltenMetalBucketItem(ModFluids.MOLTEN_STEEL.get(), (new Item.Properties().stacksTo(1))));
 
     //Molds
     public static final Supplier<Item> UNFIRED_CERAMIC_INGOT_MOLD = regItem("unfired_ceramic_ingot_mold", () ->
@@ -81,6 +83,8 @@ public class ModItems {
         new Item(new Item.Properties().stacksTo(1)));
     public static final Supplier<Item> MOLTEN_BRONZE_CERAMIC_INGOT_MOLD = regItem("molten_bronze_ceramic_ingot_mold", () ->
         new Item(new Item.Properties().stacksTo(1)));
+    public static final Supplier<Item> MOLTEN_STEEL_CERAMIC_INGOT_MOLD = regItem("molten_steel_ceramic_ingot_mold", () ->
+        new Item(new Item.Properties().stacksTo(1)));
 
     //Filled Iron Molds
     public static final Supplier<Item> MOLTEN_IRON_INGOT_MOLD = regItem("molten_iron_ingot_mold", () ->
@@ -109,6 +113,8 @@ public class ModItems {
     public static final Supplier<Item> MOLTEN_TIN_INGOT_MOLD = regItem("molten_tin_ingot_mold", () ->
         new Item(new Item.Properties().stacksTo(1)));
     public static final Supplier<Item> MOLTEN_BRONZE_INGOT_MOLD = regItem("molten_bronze_ingot_mold", () ->
+        new Item(new Item.Properties().stacksTo(1)));
+    public static final Supplier<Item> MOLTEN_STEEL_INGOT_MOLD = regItem("molten_steel_ingot_mold", () ->
         new Item(new Item.Properties().stacksTo(1)));
 
     //Slag
