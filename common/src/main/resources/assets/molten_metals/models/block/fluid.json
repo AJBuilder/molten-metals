@@ -1,6 +1,6 @@
 {
   "textures": {
-    "particle": "block/molten_iron"
+    "particle": "molten_metals:block/molten_iron"
   }
 }
 
