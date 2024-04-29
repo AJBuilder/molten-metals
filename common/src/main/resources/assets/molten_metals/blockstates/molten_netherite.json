@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "molten_metals:block/molten_netherite"
+      "model": "molten_metals:block/fluid"
     }
   }
 }

@@ -1,7 +1,10 @@
 {
   "replace": false,
   "values": [
-    "oreganized:raw_lead",
+    {
+      "id":"oreganized:raw_lead",
+      "required": false
+    },
     "create:crushed_raw_lead"
   ]
 }

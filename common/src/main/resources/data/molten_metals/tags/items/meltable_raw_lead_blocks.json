@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "oreganized:raw_lead_block"
+    {
+      "id":"oreganized:raw_lead_block",
+      "required": false
+    }
   ]
 }

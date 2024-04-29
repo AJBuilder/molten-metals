@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"mold": "molten_metals:item/ceramic_ingot_mold",
-		"particle": "molten_metals:item/ceramic_ingot_mold"
+		"mold": "molten_metals:block/ceramic_ingot_mold",
+		"particle": "#mold"
 	},
 	"elements": [
 		{

@@ -5,17 +5,12 @@ import com.ordana.molten_metals.configs.CommonConfigs;
 import net.mehvahdjukaar.moonlight.api.misc.RegSupplier;
 import net.mehvahdjukaar.moonlight.api.platform.PlatHelper;
 import net.mehvahdjukaar.moonlight.api.platform.RegHelper;
-import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.ItemLike;
 
 import java.util.Arrays;
-import java.util.List;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
 
@@ -38,14 +33,14 @@ public class ModCreativeTabs {
         );
 
         after(e, ModItems.MOLTEN_BRASS_BUCKET.get(), CreativeModeTabs.TOOLS_AND_UTILITIES,
-            ModItems.UNFIRED_CERAMIC_INGOT_MOLD, ModItems.CERAMIC_INGOT_MOLD, ModItems.INGOT_MOLD,
-            ModItems.MOLTEN_IRON_CERAMIC_INGOT_MOLD, ModItems.MOLTEN_COPPER_CERAMIC_INGOT_MOLD, ModItems.MOLTEN_GOLD_CERAMIC_INGOT_MOLD,
-            ModItems.MOLTEN_NETHERITE_CERAMIC_INGOT_MOLD, ModItems.MOLTEN_ZINC_CERAMIC_INGOT_MOLD, ModItems.MOLTEN_BRASS_CERAMIC_INGOT_MOLD
+            ModBlocks.UNFIRED_CERAMIC_INGOT_MOLD, ModBlocks.CERAMIC_INGOT_MOLD, ModBlocks.INGOT_MOLD,
+            ModBlocks.MOLTEN_IRON_CERAMIC_INGOT_MOLD, ModBlocks.MOLTEN_COPPER_CERAMIC_INGOT_MOLD, ModBlocks.MOLTEN_GOLD_CERAMIC_INGOT_MOLD,
+            ModBlocks.MOLTEN_NETHERITE_CERAMIC_INGOT_MOLD, ModBlocks.MOLTEN_ZINC_CERAMIC_INGOT_MOLD, ModBlocks.MOLTEN_BRASS_CERAMIC_INGOT_MOLD
         );
 
-        after(e, ModItems.MOLTEN_BRASS_CERAMIC_INGOT_MOLD.get(), CreativeModeTabs.TOOLS_AND_UTILITIES,
-            ModItems.MOLTEN_IRON_INGOT_MOLD, ModItems.MOLTEN_COPPER_INGOT_MOLD, ModItems.MOLTEN_GOLD_INGOT_MOLD,
-            ModItems.MOLTEN_NETHERITE_INGOT_MOLD, ModItems.MOLTEN_ZINC_INGOT_MOLD, ModItems.MOLTEN_BRASS_INGOT_MOLD
+        after(e, ModBlocks.MOLTEN_BRASS_CERAMIC_INGOT_MOLD.get().asItem(), CreativeModeTabs.TOOLS_AND_UTILITIES,
+            ModBlocks.MOLTEN_IRON_INGOT_MOLD, ModBlocks.MOLTEN_COPPER_INGOT_MOLD, ModBlocks.MOLTEN_GOLD_INGOT_MOLD,
+            ModBlocks.MOLTEN_NETHERITE_INGOT_MOLD, ModBlocks.MOLTEN_ZINC_INGOT_MOLD, ModBlocks.MOLTEN_BRASS_INGOT_MOLD
         );
 
         after(e, Items.RAW_GOLD_BLOCK, CreativeModeTabs.NATURAL_BLOCKS,
@@ -61,55 +56,55 @@ public class ModCreativeTabs {
         afterML(e, ModItems.MOLTEN_BRASS_BUCKET.get(), CreativeModeTabs.TOOLS_AND_UTILITIES, "etcetera",
                 ModItems.MOLTEN_BISMUTH_BUCKET
         );
-        afterML(e, ModItems.MOLTEN_BRASS_CERAMIC_INGOT_MOLD.get(), CreativeModeTabs.TOOLS_AND_UTILITIES, "etcetera",
-            ModItems.MOLTEN_BISMUTH_CERAMIC_INGOT_MOLD
+        afterML(e, ModBlocks.MOLTEN_BRASS_CERAMIC_INGOT_MOLD.get().asItem(), CreativeModeTabs.TOOLS_AND_UTILITIES, "etcetera",
+            ModBlocks.MOLTEN_BISMUTH_CERAMIC_INGOT_MOLD
         );
-        afterML(e, ModItems.MOLTEN_BRASS_INGOT_MOLD.get(), CreativeModeTabs.TOOLS_AND_UTILITIES, "etcetera",
-            ModItems.MOLTEN_BISMUTH_INGOT_MOLD
+        afterML(e, ModBlocks.MOLTEN_BRASS_INGOT_MOLD.get().asItem(), CreativeModeTabs.TOOLS_AND_UTILITIES, "etcetera",
+            ModBlocks.MOLTEN_BISMUTH_INGOT_MOLD
         );
 
         //OREGANIZED
         afterML(e, ModItems.MOLTEN_BRASS_BUCKET.get(), CreativeModeTabs.TOOLS_AND_UTILITIES, "oreganized",
             ModItems.MOLTEN_SILVER_BUCKET, ModItems.MOLTEN_ELECTRUM_BUCKET
         );
-        afterML(e, ModItems.MOLTEN_BRASS_CERAMIC_INGOT_MOLD.get(), CreativeModeTabs.TOOLS_AND_UTILITIES, "oreganized",
-            ModItems.MOLTEN_LEAD_CERAMIC_INGOT_MOLD, ModItems.MOLTEN_SILVER_CERAMIC_INGOT_MOLD, ModItems.MOLTEN_ELECTRUM_CERAMIC_INGOT_MOLD
+        afterML(e, ModBlocks.MOLTEN_BRASS_CERAMIC_INGOT_MOLD.get().asItem(), CreativeModeTabs.TOOLS_AND_UTILITIES, "oreganized",
+            ModBlocks.MOLTEN_LEAD_CERAMIC_INGOT_MOLD, ModBlocks.MOLTEN_SILVER_CERAMIC_INGOT_MOLD, ModBlocks.MOLTEN_ELECTRUM_CERAMIC_INGOT_MOLD
         );
-        afterML(e, ModItems.MOLTEN_BRASS_INGOT_MOLD.get(), CreativeModeTabs.TOOLS_AND_UTILITIES, "oreganized",
-            ModItems.MOLTEN_LEAD_INGOT_MOLD, ModItems.MOLTEN_SILVER_INGOT_MOLD, ModItems.MOLTEN_ELECTRUM_INGOT_MOLD
+        afterML(e, ModBlocks.MOLTEN_BRASS_INGOT_MOLD.get().asItem(), CreativeModeTabs.TOOLS_AND_UTILITIES, "oreganized",
+            ModBlocks.MOLTEN_LEAD_INGOT_MOLD, ModBlocks.MOLTEN_SILVER_INGOT_MOLD, ModBlocks.MOLTEN_ELECTRUM_INGOT_MOLD
         );
 
         //GALOSPHERE
         afterML(e, ModItems.MOLTEN_BRASS_BUCKET.get(), CreativeModeTabs.TOOLS_AND_UTILITIES, "galosphere",
             ModItems.MOLTEN_SILVER_BUCKET
         );
-        afterML(e, ModItems.MOLTEN_BRASS_CERAMIC_INGOT_MOLD.get(), CreativeModeTabs.TOOLS_AND_UTILITIES, "galosphere",
-            ModItems.MOLTEN_SILVER_CERAMIC_INGOT_MOLD
+        afterML(e, ModBlocks.MOLTEN_BRASS_CERAMIC_INGOT_MOLD.get().asItem(), CreativeModeTabs.TOOLS_AND_UTILITIES, "galosphere",
+            ModBlocks.MOLTEN_SILVER_CERAMIC_INGOT_MOLD
         );
-        afterML(e, ModItems.MOLTEN_BRASS_INGOT_MOLD.get(), CreativeModeTabs.TOOLS_AND_UTILITIES, "galosphere",
-            ModItems.MOLTEN_SILVER_INGOT_MOLD
+        afterML(e, ModBlocks.MOLTEN_BRASS_INGOT_MOLD.get().asItem(), CreativeModeTabs.TOOLS_AND_UTILITIES, "galosphere",
+            ModBlocks.MOLTEN_SILVER_INGOT_MOLD
         );
 
         //CAVERNS & CHASMS
         afterML(e, ModItems.MOLTEN_BRASS_BUCKET.get(), CreativeModeTabs.TOOLS_AND_UTILITIES, "caverns_and_chasms",
             ModItems.MOLTEN_SILVER_BUCKET, ModItems.MOLTEN_NECROMIUM_BUCKET
         );
-        afterML(e, ModItems.MOLTEN_BRASS_CERAMIC_INGOT_MOLD.get(), CreativeModeTabs.TOOLS_AND_UTILITIES, "caverns_and_chasms",
-            ModItems.MOLTEN_SILVER_CERAMIC_INGOT_MOLD, ModItems.MOLTEN_NECROMIUM_CERAMIC_INGOT_MOLD
+        afterML(e, ModBlocks.MOLTEN_BRASS_CERAMIC_INGOT_MOLD.get().asItem(), CreativeModeTabs.TOOLS_AND_UTILITIES, "caverns_and_chasms",
+            ModBlocks.MOLTEN_SILVER_CERAMIC_INGOT_MOLD, ModBlocks.MOLTEN_NECROMIUM_CERAMIC_INGOT_MOLD
         );
-        afterML(e, ModItems.MOLTEN_BRASS_INGOT_MOLD.get(), CreativeModeTabs.TOOLS_AND_UTILITIES, "caverns_and_chasms",
-            ModItems.MOLTEN_SILVER_INGOT_MOLD, ModItems.MOLTEN_NECROMIUM_INGOT_MOLD
+        afterML(e, ModBlocks.MOLTEN_BRASS_INGOT_MOLD.get().asItem(), CreativeModeTabs.TOOLS_AND_UTILITIES, "caverns_and_chasms",
+            ModBlocks.MOLTEN_SILVER_INGOT_MOLD, ModBlocks.MOLTEN_NECROMIUM_INGOT_MOLD
         );
 
         //DREAMS & DESIRES
         afterML(e, ModItems.MOLTEN_BRASS_BUCKET.get(), CreativeModeTabs.TOOLS_AND_UTILITIES, "create_dd",
             ModItems.MOLTEN_TIN_BUCKET, ModItems.MOLTEN_BRONZE_BUCKET, ModItems.MOLTEN_STEEL_BUCKET
         );
-        afterML(e, ModItems.MOLTEN_BRASS_CERAMIC_INGOT_MOLD.get(), CreativeModeTabs.TOOLS_AND_UTILITIES, "create_dd",
-            ModItems.MOLTEN_TIN_CERAMIC_INGOT_MOLD, ModItems.MOLTEN_BRONZE_CERAMIC_INGOT_MOLD, ModItems.MOLTEN_STEEL_CERAMIC_INGOT_MOLD
+        afterML(e, ModBlocks.MOLTEN_BRASS_CERAMIC_INGOT_MOLD.get().asItem(), CreativeModeTabs.TOOLS_AND_UTILITIES, "create_dd",
+            ModBlocks.MOLTEN_TIN_CERAMIC_INGOT_MOLD, ModBlocks.MOLTEN_BRONZE_CERAMIC_INGOT_MOLD, ModBlocks.MOLTEN_STEEL_CERAMIC_INGOT_MOLD
         );
-        afterML(e, ModItems.MOLTEN_BRASS_INGOT_MOLD.get(), CreativeModeTabs.TOOLS_AND_UTILITIES, "create_dd",
-            ModItems.MOLTEN_TIN_INGOT_MOLD, ModItems.MOLTEN_BRONZE_INGOT_MOLD, ModItems.MOLTEN_STEEL_INGOT_MOLD
+        afterML(e, ModBlocks.MOLTEN_BRASS_INGOT_MOLD.get().asItem(), CreativeModeTabs.TOOLS_AND_UTILITIES, "create_dd",
+            ModBlocks.MOLTEN_TIN_INGOT_MOLD, ModBlocks.MOLTEN_BRONZE_INGOT_MOLD, ModBlocks.MOLTEN_STEEL_INGOT_MOLD
         );
 
         //SPELUNKERY

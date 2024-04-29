@@ -47,6 +47,7 @@ public class ModItems {
     public static final Supplier<Item> MOLTEN_STEEL_BUCKET = regItem("molten_steel_bucket", () ->
         new MoltenMetalBucketItem(ModFluids.MOLTEN_STEEL.get(), (new Item.Properties().stacksTo(1))));
 
+    /*
     //Molds
     public static final Supplier<Item> UNFIRED_CERAMIC_INGOT_MOLD = regItem("unfired_ceramic_ingot_mold", () ->
         new Item(new Item.Properties().stacksTo(16)));
@@ -54,6 +55,7 @@ public class ModItems {
         new Item(new Item.Properties().stacksTo(16)));
     public static final Supplier<Item> INGOT_MOLD = regItem("ingot_mold", () ->
         new Item(new Item.Properties().stacksTo(16)));
+
 
     //Filled Ceramic Molds
     public static final Supplier<Item> MOLTEN_IRON_CERAMIC_INGOT_MOLD = regItem("molten_iron_ceramic_ingot_mold", () ->
@@ -116,6 +118,8 @@ public class ModItems {
         new Item(new Item.Properties().stacksTo(1)));
     public static final Supplier<Item> MOLTEN_STEEL_INGOT_MOLD = regItem("molten_steel_ingot_mold", () ->
         new Item(new Item.Properties().stacksTo(1)));
+
+     */
 
     //Slag
     public static final Supplier<Item> SLAG = regItem("slag", () ->
