@@ -1,4 +1,4 @@
-{
+recipes -> fabric{
   "conditions": [
     {
       "modid": "fabric-api",
