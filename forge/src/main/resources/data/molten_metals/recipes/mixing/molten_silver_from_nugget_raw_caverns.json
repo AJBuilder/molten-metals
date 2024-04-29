@@ -5,13 +5,6 @@
       "type": "forge:mod_loaded"
     },
     {
-      "type": "forge:not",
-      "value": {
-        "modid": "fabric-api",
-        "type": "forge:mod_loaded"
-      }
-    },
-    {
       "modid": "spelunkery",
       "type": "forge:mod_loaded"
     }
