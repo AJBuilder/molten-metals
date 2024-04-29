@@ -1,16 +1,11 @@
 {
-  "conditions": [
+  "fabric:load_conditions": [
     {
-      "modid": "spelunkery",
-      "type": "forge:mod_loaded"
-    },
-    {
-      "modid": "oreganized",
-      "type": "forge:mod_loaded"
-    },
-    {
-      "modid": "fabric-api",
-      "type": "forge:mod_loaded"
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "spelunkery",
+        "oreganized"
+      ]
     }
   ],
   "type": "create:mixing",
