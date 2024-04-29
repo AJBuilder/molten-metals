@@ -1,0 +1,23 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "oreganized"
+      ]
+    }
+  ],
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "tag": "molten_metals:meltable_silver"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "molten_metals:molten_silver",
+      "amount": 8100
+    }
+  ],
+  "heatRequirement": "heated"
+}

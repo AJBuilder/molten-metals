@@ -1,0 +1,21 @@
+{
+  "conditions": [
+    {
+      "modid": "create_dd",
+      "type": "forge:mod_loaded"
+    }
+  ],
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "create_dd:steel_ingot"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "molten_metals:molten_steel",
+      "amount": 100
+    }
+  ],
+  "heatRequirement": "heated"
+}

@@ -1,0 +1,21 @@
+{
+  "conditions": [
+    {
+      "modid": "oreganized",
+      "type": "forge:mod_loaded"
+    }
+  ],
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "oreganized:electrum_block"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "molten_metals:molten_electrum",
+      "amount": 900
+    }
+  ],
+  "heatRequirement": "heated"
+}

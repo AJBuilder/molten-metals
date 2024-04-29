@@ -1,0 +1,27 @@
+{
+  "conditions": [
+    {
+      "modid": "oreganized",
+      "type": "forge:mod_loaded"
+    }
+  ],
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "oreganized:electrum_ingot"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "molten_metals:molten_electrum",
+      {
+      "type": "forge:not",
+      "value": {
+        "modid": "fabric-api",
+        "type": "forge:mod_loaded"
+      }
+    }
+    }
+  ],
+  "heatRequirement": "heated"
+}

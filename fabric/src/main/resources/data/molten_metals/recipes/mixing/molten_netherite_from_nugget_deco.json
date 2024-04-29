@@ -1,0 +1,23 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "createdeco"
+      ]
+    }
+  ],
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "tag": "molten_metals:meltable_netherite_nuggets"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "molten_metals:molten_netherite",
+      "amount": 900
+    }
+  ],
+  "heatRequirement": "heated"
+}

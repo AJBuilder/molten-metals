@@ -1,0 +1,23 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "fabric-api"
+      ]
+    }
+  ],
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "create:brass_block"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "molten_metals:molten_brass",
+      "amount": 72900
+    }
+  ],
+  "heatRequirement": "heated"
+}

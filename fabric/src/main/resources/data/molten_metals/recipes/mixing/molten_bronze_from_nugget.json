@@ -1,0 +1,23 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "create_dd"
+      ]
+    }
+  ],
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "create_dd:bronze_nugget"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "molten_metals:molten_bronze",
+      "amount": 900
+    }
+  ],
+  "heatRequirement": "heated"
+}

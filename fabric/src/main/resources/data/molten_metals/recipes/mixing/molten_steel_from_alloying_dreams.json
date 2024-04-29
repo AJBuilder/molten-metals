@@ -1,0 +1,32 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "create_dd"
+      ]
+    }
+  ],
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "tag": "minecraft:coals"
+    },
+    {
+      "tag": "minecraft:coals"
+    },
+    {
+      "tag": "minecraft:coals"
+    },
+    {
+      "fluid": "molten_metals:molten_iron",
+      "amount": 8100
+    }
+  ],
+  "results": [
+    {
+      "fluid": "molten_metals:molten_steel",
+      "amount": 8100
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "create_dd"
+      ]
+    }
+  ],
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "fluid": "molten_metals:molten_copper",
+      "amount": 24300
+    },
+    {
+      "fluid": "molten_metals:molten_zinc",
+      "amount": 8100
+    },
+    {
+      "fluid": "molten_metals:molten_tin",
+      "amount": 8100
+    }
+  ],
+  "results": [
+    {
+      "fluid": "molten_metals:molten_bronze",
+      "amount": 16200
+    }
+  ]
+}

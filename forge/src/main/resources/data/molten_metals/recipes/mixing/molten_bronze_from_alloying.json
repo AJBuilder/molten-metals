@@ -1,0 +1,29 @@
+{
+  "conditions": [
+    {
+      "modid": "create_dd",
+      "type": "forge:mod_loaded"
+    }
+  ],
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "fluid": "molten_metals:molten_copper",
+      "amount": 300
+    },
+    {
+      "fluid": "molten_metals:molten_zinc",
+      "amount": 100
+    },
+    {
+      "fluid": "molten_metals:molten_tin",
+      "amount": 100
+    }
+  ],
+  "results": [
+    {
+      "fluid": "molten_metals:molten_bronze",
+      "amount": 200
+    }
+  ]
+}

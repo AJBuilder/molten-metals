@@ -1,0 +1,25 @@
+{
+  "conditions": [
+    {
+      "modid": "oreganized",
+      "type": "forge:mod_loaded"
+    }
+  ],
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "fluid": "molten_metals:molten_silver",
+      "amount": 500
+    },
+    {
+      "fluid": "molten_metals:molten_gold",
+      "amount": 300
+    }
+  ],
+  "results": [
+    {
+      "fluid": "molten_metals:molten_electrum",
+      "amount": 100
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "fabric-api"
+      ]
+    }
+  ],
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "tag": "molten_metals:meltable_iron"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "molten_metals:molten_iron",
+      "amount": 8100
+    }
+  ],
+  "heatRequirement": "heated"
+}
