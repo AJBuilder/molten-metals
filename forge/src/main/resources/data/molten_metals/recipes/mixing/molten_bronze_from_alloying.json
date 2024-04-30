@@ -9,21 +9,18 @@
   "ingredients": [
     {
       "fluid": "molten_metals:molten_copper",
-      "amount": 300
-    },
-    {
-      "fluid": "molten_metals:molten_zinc",
-      "amount": 100
+      "amount": 432
     },
     {
       "fluid": "molten_metals:molten_tin",
-      "amount": 100
+      "amount": 144
     }
   ],
   "results": [
     {
       "fluid": "molten_metals:molten_bronze",
-      "amount": 200
+      "amount": 576
     }
-  ]
+  ],
+  "heatRequirement": "heated"
 }

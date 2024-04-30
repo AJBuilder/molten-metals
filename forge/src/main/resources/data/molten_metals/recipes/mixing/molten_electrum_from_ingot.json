@@ -14,13 +14,7 @@
   "results": [
     {
       "fluid": "molten_metals:molten_electrum",
-      {
-      "type": "forge:not",
-      "value": {
-        "modid": "fabric-api",
-        "type": "forge:mod_loaded"
-      }
-    }
+      "amount": 144
     }
   ],
   "heatRequirement": "heated"

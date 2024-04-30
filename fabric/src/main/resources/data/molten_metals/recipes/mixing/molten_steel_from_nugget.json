@@ -1,20 +1,22 @@
 {
-  "conditions": [
+  "fabric:load_conditions": [
     {
-      "modid": "create_dd",
-      "type": "forge:mod_loaded"
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "create_dd"
+      ]
     }
   ],
   "type": "create:mixing",
   "ingredients": [
     {
-      "item": "create_dd:steel_block"
+      "item": "create_dd:steel_nugget"
     }
   ],
   "results": [
     {
       "fluid": "molten_metals:molten_steel",
-      "amount": 900
+      "amount": 1000
     }
   ],
   "heatRequirement": "heated"

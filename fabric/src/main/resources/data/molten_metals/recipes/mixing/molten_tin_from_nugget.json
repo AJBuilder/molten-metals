@@ -16,7 +16,7 @@
   "results": [
     {
       "fluid": "molten_metals:molten_tin",
-      "amount": 900
+      "amount": 1000
     }
   ],
   "heatRequirement": "heated"

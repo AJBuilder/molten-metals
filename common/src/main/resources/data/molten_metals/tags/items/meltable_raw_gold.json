@@ -2,6 +2,14 @@
   "replace": false,
   "values": [
     "minecraft:raw_gold",
-    "create:crushed_raw_gold"
+    "create:crushed_raw_gold",
+    {
+      "id": "#c:gold_ores",
+      "required": false
+    },
+    {
+      "id": "#spelunkery:gold_ores",
+      "required": false
+    }
   ]
 }

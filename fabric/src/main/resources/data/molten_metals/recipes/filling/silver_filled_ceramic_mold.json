@@ -1,0 +1,27 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:any_mods_loaded",
+      "values": [
+        "caverns_and_chasms",
+        "oreganized",
+        "galosphere"
+      ]
+    }
+  ],
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "molten_metals:ceramic_ingot_mold"
+    },
+    {
+      "fluid": "molten_metals:molten_silver",
+      "amount": 9000
+    }
+  ],
+  "results": [
+    {
+      "item": "molten_metals:molten_silver_ceramic_ingot_mold"
+    }
+  ]
+}

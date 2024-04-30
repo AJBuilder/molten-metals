@@ -17,7 +17,7 @@
   "results": [
     {
       "fluid": "molten_metals:molten_silver",
-      "amount": 900
+      "amount": 1000
     },
     {
       "item": "molten_metals:slag_nugget"

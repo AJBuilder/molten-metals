@@ -10,23 +10,14 @@
   "type": "create:mixing",
   "ingredients": [
     {
-      "tag": "minecraft:coals"
-    },
-    {
-      "tag": "minecraft:coals"
-    },
-    {
-      "tag": "minecraft:coals"
-    },
-    {
-      "fluid": "molten_metals:molten_iron",
-      "amount": 8100
+      "item": "create_dd:steel_ingot"
     }
   ],
   "results": [
     {
       "fluid": "molten_metals:molten_steel",
-      "amount": 8100
+      "amount": 9000
     }
-  ]
+  ],
+  "heatRequirement": "heated"
 }

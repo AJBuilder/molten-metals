@@ -14,7 +14,7 @@
   "results": [
     {
       "fluid": "molten_metals:molten_mercury",
-      "amount": 900
+      "amount": 1296
     }
   ],
   "heatRequirement": "heated"

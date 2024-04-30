@@ -1,9 +1,16 @@
 {
-  "fabric:load_conditions": [
+  "conditions": [
     {
-      "condition": "fabric:all_mods_loaded",
+      "type": "forge:or",
       "values": [
-        "create_dd"
+        {
+          "modid": "create_dd",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "ad_astra",
+          "type": "forge:mod_loaded"
+        }
       ]
     }
   ],
@@ -16,7 +23,7 @@
   "results": [
     {
       "fluid": "molten_metals:molten_steel",
-      "amount": 72900
+      "amount": 1296
     }
   ],
   "heatRequirement": "heated"

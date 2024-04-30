@@ -10,7 +10,7 @@
   "results": [
     {
       "fluid": "molten_metals:molten_zinc",
-      "amount": 11.11
+      "amount": 16
     }
   ],
   "heatRequirement": "heated"

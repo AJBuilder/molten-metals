@@ -5,7 +5,7 @@
   "ingredients": [
     {
       "fluid": "molten_metals:molten_gold",
-      "amount": 400
+      "amount": 576
     },
     {
       "item": "minecraft:netherite_scrap"
@@ -23,7 +23,7 @@
   "results": [
     {
       "fluid": "molten_metals:molten_netherite",
-      "amount": 100
+      "amount": 144
     },
     {
       "item": "molten_metals:slag",

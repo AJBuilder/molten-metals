@@ -7,19 +7,17 @@
       ]
     }
   ],
-  "type": "create:emptying",
+  "type": "create:mixing",
   "ingredients": [
     {
-      "item": "molten_metals:molten_steel_ceramic_ingot_mold"
+      "item": "create_dd:steel_block"
     }
   ],
   "results": [
     {
-      "item": "molten_metals:ceramic_ingot_mold"
-    },
-    {
       "fluid": "molten_metals:molten_steel",
-      "amount": 8100
+      "amount": 81000
     }
-  ]
+  ],
+  "heatRequirement": "heated"
 }

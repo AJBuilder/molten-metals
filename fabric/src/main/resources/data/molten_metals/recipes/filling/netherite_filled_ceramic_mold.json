@@ -1,12 +1,4 @@
 {
-  "fabric:load_conditions": [
-    {
-      "condition": "fabric:all_mods_loaded",
-      "values": [
-        "fabric-api"
-      ]
-    }
-  ],
   "type": "create:filling",
   "ingredients": [
     {
@@ -14,7 +6,7 @@
     },
     {
       "fluid": "molten_metals:molten_netherite",
-      "amount": 8100
+      "amount": 9000
     }
   ],
   "results": [

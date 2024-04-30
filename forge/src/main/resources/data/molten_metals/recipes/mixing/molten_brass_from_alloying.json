@@ -5,17 +5,18 @@
   "ingredients": [
     {
       "fluid": "molten_metals:molten_copper",
-      "amount": 100
+      "amount": 144
     },
     {
       "fluid": "molten_metals:molten_zinc",
-      "amount": 100
+      "amount": 144
     }
   ],
   "results": [
     {
       "fluid": "molten_metals:molten_brass",
-      "amount": 200
+      "amount": 288
     }
-  ]
+  ],
+  "heatRequirement": "heated"
 }

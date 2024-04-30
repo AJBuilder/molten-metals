@@ -11,17 +11,18 @@
   "ingredients": [
     {
       "fluid": "molten_metals:molten_silver",
-      "amount": 40500
+      "amount": 45000
     },
     {
       "fluid": "molten_metals:molten_gold",
-      "amount": 24300
+      "amount": 27000
     }
   ],
   "results": [
     {
       "fluid": "molten_metals:molten_electrum",
-      "amount": 8100
+      "amount": 9000
     }
-  ]
+  ],
+  "heatRequirement": "heated"
 }

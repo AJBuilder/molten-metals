@@ -11,7 +11,7 @@
   "ingredients": [
     {
       "fluid": "molten_metals:molten_silver",
-      "amount": 32400
+      "amount": 36000
     },
     {
       "item": "minecraft:netherite_scrap"
@@ -29,7 +29,7 @@
   "results": [
     {
       "fluid": "molten_metals:molten_necromium",
-      "amount": 8100
+      "amount": 9000
     },
     {
       "item": "molten_metals:slag",
