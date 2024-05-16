@@ -75,6 +75,11 @@ public class MoltenMetalFluid extends ModFlowingFluid {
     }
 
     @NotNull
+    public boolean canConvertToSource() {
+        return false;
+    }
+
+    @NotNull
     public Item getBucket() {
         return ModItems.MOLTEN_BRASS_BUCKET.get();
     }
@@ -159,7 +164,7 @@ public class MoltenMetalFluid extends ModFlowingFluid {
                             level.setBlockAndUpdate(blockPos, BaseFireBlock.getState(level, blockPos));
                             return;
                         }
-                    } else if (blockState.blocksMotion()) {
+                    } else if (blockState.getMaterial().blocksMotion()) {
                         return;
                     }
                 }
@@ -194,7 +199,7 @@ public class MoltenMetalFluid extends ModFlowingFluid {
     }
 
     private boolean isFlammable(LevelReader level, BlockPos pos) {
-        return (pos.getY() < level.getMinBuildHeight() || pos.getY() >= level.getMaxBuildHeight() || level.hasChunkAt(pos)) && level.getBlockState(pos).ignitedByLava();
+        return (pos.getY() < level.getMinBuildHeight() || pos.getY() >= level.getMaxBuildHeight() || level.hasChunkAt(pos)) && level.getBlockState(pos).getMaterial().isFlammable();
     }
 
     public static class Flowing extends MoltenMetalFluid {
