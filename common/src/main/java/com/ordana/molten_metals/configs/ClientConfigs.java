@@ -10,7 +10,7 @@ import java.util.function.Supplier;
 public class ClientConfigs {
 
     public static void init() {
-
+        
     }
 
     public static ConfigSpec CONFIG_SPEC;

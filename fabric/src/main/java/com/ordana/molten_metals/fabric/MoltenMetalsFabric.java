@@ -4,7 +4,7 @@ import com.ordana.molten_metals.MoltenMetals;
 import com.ordana.molten_metals.MoltenMetalsClient;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
-import net.mehvahdjukaar.moonlight.api.platform.PlatHelper;
+import net.mehvahdjukaar.moonlight.api.platform.PlatformHelper;
 import net.minecraft.server.MinecraftServer;
 
 public class MoltenMetalsFabric implements ModInitializer {
@@ -17,7 +17,7 @@ public class MoltenMetalsFabric implements ModInitializer {
 
         ServerLifecycleEvents.SERVER_STARTING.register(s -> currentServer = s);
 
-        if(PlatHelper.getPhysicalSide().isClient()) {
+        if(PlatformHelper.getEnv().isClient()) {
             MoltenMetalsClient.init();
         }
 
